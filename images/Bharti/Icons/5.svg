@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 19.2 21.52">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #231f20;
+      }
+
+      .cls-2 {
+        stroke-width: .52px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        stroke-width: .51px;
+      }
+
+      .cls-4 {
+        stroke-width: .49px;
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-7 {
+        fill: #fff;
+      }
+
+      .cls-8 {
+        fill: #eeeff0;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="19.2" height="21.52"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect class="cls-1" width="19.2" height="21.52"/>
+    </clipPath>
+  </defs>
+  <g class="cls-9">
+    <path class="cls-5" d="M7.5,7.24c.74,1.39,3.55,1.38,4.29,0-.21,2.01-4.07,2.01-4.29,0"/>
+    <path class="cls-5" d="M12.43,5.3c-.51-.84-1.43-.84-1.93,0-.24-1.45,2.17-1.46,1.93,0"/>
+    <path class="cls-5" d="M8.65,5.3c-.51-.84-1.43-.84-1.93,0-.24-1.45,2.17-1.46,1.93,0"/>
+    <path class="cls-4" d="M14.01,5.48c0,2.89-1.54,5.23-4.43,5.23s-4.43-2.34-4.43-5.23S6.68.24,9.58.24s4.43,2.34,4.43,5.23Z"/>
+    <path class="cls-3" d="M6.72,9.78c-1.96.84-3.66,2.21-4.87,4.05"/>
+    <path class="cls-3" d="M17.67,13.83c-1.28-1.84-3.09-3.21-5.18-4.05"/>
+  </g>
+  <polygon class="cls-7" points="9.19 10.68 8.46 15.56 9.54 16.8 10.01 16.58 10.75 15.57 9.85 10.68 9.19 10.68"/>
+  <polyline class="cls-2" points="9.97 10.66 10.71 15.52 9.74 16.6 9.46 16.6 8.5 15.52 9.24 10.66"/>
+  <polygon class="cls-8" points=".32 13.96 2.05 21.26 17.14 21.26 18.87 13.96 .32 13.96"/>
+  <g class="cls-6">
+    <polygon class="cls-3" points="17.14 21.26 2.05 21.26 .33 13.96 18.87 13.96 17.14 21.26"/>
+  </g>
+  <line class="cls-3" x1="8.02" y1="19.6" x2="11.04" y2="19.6"/>
+</svg>
