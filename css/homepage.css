@@ -1,0 +1,249 @@
+/* GLOBAL STYLE  *
+------------------*/
+.text-brand-red {
+    color: #f9704f;
+}
+
+.t-p {
+    font-size: 2em !important;
+}
+
+.t-p2 {
+    font-size: 1.1em !important;
+    /* margin: 0 !important; */
+    font-weight: 500;
+    line-height: 1.2 !important;
+}
+
+.section-title .h2-c {
+    font-size: 25px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.section-title .h2-c::before,
+.section-title .h2-c::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.section-title .h2-c::before {
+    width: 80px;
+    background: #ebeef0;
+}
+
+.section-title .h2-c::after {
+    width: 40px;
+    background: #ed1c24;
+}
+
+/* CSS FOR COVER PAGE START */
+.banner{
+    width: 100%;
+    display: flex;
+}
+.banner-img {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+
+.banner-img img {
+    width: 100%;
+    margin: auto;
+}
+.banner-img .themeline{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+.banner-img .themeline .th1{
+    color: #ed1c24;
+    font-size: 4em;
+    margin: 0;
+}
+.banner-img .themeline .th2{
+    color: #000;
+    font-size: 4em;
+    margin: 0;
+}
+
+/* CSS FOR COVER PAGE END */
+
+/* CSS FOR ABOUT SEC START */
+.about-report {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-report .about-l .btn-about {
+    width: fit-content;
+}
+
+.about-report .about-l {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.filters-box img {
+    mix-blend-mode: multiply;
+}
+
+/* CSS FOR ABOUT SEC START */
+/* CSS FOR MD SEC START */
+.cta-title .section-inner-md {
+    padding: 0 200px;
+    background-color: #30404f;
+
+  }
+  .md-link {
+    width: 100%;;
+    position: relative; /* Ensure the link is the reference point for the overlay */
+    display: block; /* Ensure the link has dimensions */
+    transition: all 0.3s ease-in-out; /* Smooth transition for any property changes */
+    text-decoration: none; /* Optional: Remove underline from link */
+    color: inherit; /* Optional: Inherit text color */
+}
+.md-link img{
+    width: 100%;
+}
+
+.md-link::after {
+    content: ''; /* Necessary for the pseudo-element to appear */
+    position: absolute; /* Position it relative to the .md-link */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-image: linear-gradient(135deg, rgb(237, 28, 36, 0.9) 1%, rgba(255, 255, 255, 0.2) 95%, rgb(237, 28, 36, 0.9) 5%); */
+    background-image: linear-gradient(135deg, rgba(237, 28, 36, 0.9) 5%, rgba(255, 255, 255, 0.2) 5% 95%, rgba(237, 28, 36, 0.9) 95% 100%);
+    opacity: 0; /* Start with the overlay invisible */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for the overlay */
+    z-index: 1; /* Ensure it appears above the content */
+    pointer-events: none; /* Overlay doesn't interfere with text or link clicks */
+    border-radius: inherit; /* Ensure the overlay follows any border-radius of the link */
+}
+
+.md-link:hover::after {
+    opacity: 1; /* Make the overlay visible on hover */
+}
+
+/* CSS FOR MD SEC END */
+
+/* CSS FOR BOD SEC END */
+.box-img-last img{
+    width: 60% !important;
+}
+/* CSS FOR BOD SEC END */
+
+
+.f-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.f-card {
+    width: 220px;
+    height: 220px;
+    perspective: 1000px;
+}
+
+.f-card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.f-card:hover .f-card-inner {
+    transform: rotateY(180deg);
+}
+
+.f-card-front,
+.f-card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.f-card-front {
+    background: white;
+    border: 1px solid #f9704f;
+}
+
+.f-card-icon {
+    width: 50%;
+}
+
+.f-card-back {
+    background: linear-gradient(135deg, #000000, #ed1c24);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.f-card-front .f-card-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.f-card-front .f-card-title {
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.f-card-back .f-card-content {
+    font-size: 16px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .banner-img .themeline .th1{
+      font-size: 1.2em !important;
+  }
+  .banner-img .themeline .th2{
+      font-size: 1.2em !important;
+  }
+  .about-report {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.f-card-container {
+    display: block; 
+    justify-content: center;
+    gap: 30px;
+}
+.f-card{
+    margin: 2% auto;
+
+}
+.parallax-section .section-inner {
+    padding: 0;
+    
+  }
+}

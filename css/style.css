@@ -59,6 +59,40 @@ video {
   vertical-align: baseline;
 }
 
+.marginal{
+  width: 100%;
+  max-width: 1500px;
+  margin: 5% auto;
+}
+
+.anmn-cont{
+  width: 80%;
+  margin: auto;
+}
+.anmn-cont img{
+  max-width: 100%;
+}
+.abs-milestone-container{
+max-width: 500px;
+width: 100%;
+position: absolute;
+top: 15%;
+}
+.bold-black-color{
+  font-weight: 900;
+  color: black;
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -9514,6 +9548,7 @@ table tbody tr td:nth-child(2) img {
 /*  [ 13 ] - Buttons
 ======================= */
 .btn {
+
   font-size: 14px;
   font-weight: 700;
   padding: 17px 35px;
@@ -10973,7 +11008,7 @@ input[type="submit"].form-control:focus {
   height: 3px;
   bottom: 0;
   left: 0;
-  right: 0;
+  /* right: 0; */
   margin: auto;
 }
 .section-title h2::before {
@@ -11053,6 +11088,8 @@ input[type="submit"].form-control:focus {
 .os-tabs {
   list-style: none;
   display: table;
+  display: flex;
+  justify-content: center;
   position: relative;
   width: 100%;
   margin-bottom: 50px;
@@ -11082,9 +11119,8 @@ input[type="submit"].form-control:focus {
   position: relative;
   cursor: pointer;
   color: #777;
-  font-size: 14px;
+  font-size: 1.4em;
   font-weight: 600;
-  font-family: "Open Sans", "Droid Arabic Kufi", sans-serif;
   overflow: hidden;
   float: left;
 }
@@ -13010,19 +13046,27 @@ input[type="submit"].form-control:focus {
 /*  [ 01 ] - Footer Mini
 =========================== */
 #footer-mini {
-  background: #fff;
+  background: rgba(103, 103, 103, 0.5);
   padding: 25px 0;
-  text-align: center;
+  text-align: center;;
+}
+.footer-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo-footer {
-  float: left;
+.logo-footer{
+  width: 200px;
   position: relative;
   z-index: 10;
 }
+.logo-footer img{
+width: 200px;
+}
 
 .copyrights-message {
-  color: #222;
+  color: #fff;
   position: relative;
   top: 6px;
   font-weight: 600;
@@ -13031,6 +13075,13 @@ input[type="submit"].form-control:focus {
 .copyrights-message span {
   color: #ed1c24;
   font-weight: 700;
+}
+.kna-logo{
+  width: 100px;
+}
+.kna-logo img{
+  padding: 8%;
+  width: 100px;
 }
 
 .scroll-top-btn {
@@ -13192,6 +13243,7 @@ input[type="submit"].form-control:focus {
 /*  [ 03 ] - Width From 768px to 0
 ==================================== */
 @media (max-width: 768px) {
+
   /* Banner Slider */
   .slide-content h1 {
     font-size: 40px;
@@ -13217,8 +13269,28 @@ input[type="submit"].form-control:focus {
   #footer-mini {
     padding: 40px 0;
   }
-
-  .logo-footer,
+	.footer-row{
+		flex-direction: column !important;
+		align-items: center;
+		justify-content: space-between;
+	  }
+  .logo-footer{
+    float: right !important;
+    display: block;
+    width: 100%;
+  }
+  .logo-footer img{
+    width: 200px;
+  }
+  .kna-logo{
+    width: 100%;
+    display: block;
+    margin-top: 3%;
+  }
+  .kna-logo img{
+    padding: 4px 8px;
+    width: 100px;
+  }
   .scroll-top-btn {
     float: none !important;
     display: block;
@@ -13229,6 +13301,7 @@ input[type="submit"].form-control:focus {
   }
 
   .copyrights-message {
+    color: #fff;
     margin-top: 15px;
     top: 0;
   }
