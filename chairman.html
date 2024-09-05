@@ -10,6 +10,7 @@
 
     <!-- Stylesheets
 	============================================= -->
+	<link href="css/navbar.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i|Open+Sans:400,400i,700,700i"
         rel="stylesheet">
@@ -50,48 +51,64 @@
         <!-- Header
 		============================================= -->
         <header id="header">
-
-			<div id="header-wrap">
-
-				<div class="container">
-					<div class="row">
-						<div class="col-md-14">
-
-							<a class="logo" href="#">
-								<img style="width: 220px;" src="./images/Bharti/Logo-bharti.svg" alt="">
-								<h5><span class="colored">Travel</span> Tour</h5>
-								<span>Landing Template</span>
-							</a><!-- .logo end -->
-
-							<ul id="" class="main-menu">
-								<li><a  href="./index.html">Home</a></li>
-								<li><a  href="./WhereWeOperate.html">Where We Operate</a></li>
-								<li><a href="./Milestone.html">Milestones</a></li>
-								<li><a  href="./chairman.html">Chairman Message</a></li>
-								<!-- <li><a data-scroll-nav="4" href="./">Board of Directors</a></li> -->
-								<!-- <li><a href="./CSR.html">CSR</a></li> -->
-								<li><a href="./images/docs/06_Bharti Hexacom FS_ 08 08 2024.pdf" target="_blank">Statutory Report</a></li>
-							</ul>
-							<a class="header-btn btn small colorful hover-dark" href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank">Download Full Report</a>
-							<div class="mobile-menu-btn hamburger hamburger--slider">
-								<span class="hamburger-box">
-									<span class="hamburger-inner"></span>
-								</span>
-							</div><!-- .mobile-menu-btn -->
-							<div id="mobile-menu"></div><!-- #mobile-menu end -->
-						</div><!-- .col-md-12 end -->
-					</div><!-- .row end -->
-				</div><!-- .container end -->
-
-			</div><!-- #header-wrap end -->
-
-		</header><!-- #header end -->
+            <div class="navbar-main" id="navbar-main">
+                <section class="n-wrapper n-container">
+                   <a href="./index.html" class="brand"><img src="./images/Bharti/Logo-bharti.svg" alt=""></a>
+                   <div class="burger" id="burger">
+                      <span class="burger-line"></span>
+                      <span class="burger-line"></span>
+                      <span class="burger-line"></span>
+                   </div>
+                   <span class="overlay"></span>
+                   <nav class="navbar" id="navbar">
+                      <ul class="menu" id="menu">
+                         <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                         <li class="menu-item menu-dropdown">
+                            <span class="menu-link" data-toggle="submenu">Corporate Overview<i class="fa fa-caret-down"></i></span>
+                            <ul class="submenu">
+                               <li class="submenu-item"><a href="./WhereWeOperate.html" class="submenu-link">Where We Operate</a></li>
+                               <li class="submenu-item"><a href="./Milestone.html" class="submenu-link">Milestones</a></li>
+                               <li class="submenu-item"><a href="./chairman.html" class="submenu-link">Message from the Chairman</a></li>
+                               <li class="submenu-item"><a href="./BusinessModel.html" class="submenu-link">Business Model</a></li>
+                               <li class="submenu-item"><a href="./CSR.html" class="submenu-link">Key Performance Indicators</a></li>
+                               <li class="submenu-item"><a href="./CSR.html" class="submenu-link">Customer Experience</a></li>
+                               <li class="submenu-item"><a href="./CSR.html" class="submenu-link">Corporate Social Responsibility</a></li>
+                            </ul>
+                         </li>
+                         <li class="menu-item"><a href="#" class="menu-link">MD&A</a></li>
+                         <li class="menu-item menu-dropdown">
+                            <span class="menu-link" data-toggle="submenu">Statutory Reports<i class="fa fa-caret-down"></i></span>
+                            <ul class="submenu">
+                               <li class="submenu-item"> <a href="#" class="submenu-link">Business Responsibility & Sustainability Reporting</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-link">Board’s Report</a></li>
+                               <li class="submenu-item"><a href="#" class="submenu-link">Report on Corporate Governance</a></li>
+                            </ul>
+                            
+                         </li>
+    
+                         <li class="menu-item"><a href="#" class="menu-link">Financial Statements</a></li>
+                         <li class="menu-item"><a href="#" class="menu-link">Corporate Information</a></li>
+    
+                        <li class="menu-item"><a data-aos="fade-up" data-aos-delay="100" class="btn btn-about menu-link-btn colorful small hover-dark " href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank"><i class="fa fa-arrow-down" aria-hidden="true"></i> Download Full Report</a></li>
+                         <!-- <li>
+    
+                             <a class="header-btn btn small colorful hover-dark" href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank">Download Full Report</a>
+                            </li> -->
+    
+                      </ul>
+                   </nav>
+                </section>
+            </div>
+    
+            <div id="mobile-menu"></div><!-- #mobile-menu end -->
+            
+        </header>
 
         <div class="marginal">
             <h2>Message from the Chairman</h2>
             <img src="images/Bharti/MDMessage.webp" alt="Message from the Chairman">
 
-            <div style="font-size: medium;">
+            <div style="font-size: medium; margin-top: 2%;">
                 <p>The year 2023-24 marked a significant milestone for our Company, as the number of shareholders grew
                     from just two to several lakhs. The recent IPO of 7.5 crore shares was a resounding success, being
                     oversubscribed about 30 times. This remarkable achievement reflects the strong vote of confidence in
@@ -184,8 +201,7 @@
 					<div class="col-md-12 footer-row">
 						<a class="logo-footer" href="#"><img src="./images/Bharti/Logo-bharti.svg" alt=""></a>
 						<div class="copyrights-message">2023 - 2024 © <span>Bharti Hexacom Limited</span>. All rights reserved.</div>
-						<a href="https://www.kalolwala.com" class="kna-logo"><img src="./images/homepage/logo-k&a.png" alt=""></a>
-					</div><!-- .col-md-12 end -->
+<a href="https://www.kalolwala.com" class="kna-logo">Developeed by :<img src="./images/homepage/logo-k&a.png"alt=""></a>					</div><!-- .col-md-12 end -->
 				</div><!-- .row end -->
 			</div><!-- .container end -->
 
@@ -196,6 +212,7 @@
 
     <!-- External JavaScripts
 	============================================= -->
+	<script src="js/script.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jRespond.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>

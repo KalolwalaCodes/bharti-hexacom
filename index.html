@@ -10,6 +10,7 @@
 
 	<!-- Stylesheets
 	============================================= -->
+	<link href="css/navbar.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<link href="css/homepage.css" rel="stylesheet">
 	<link href="css/marquee.css" rel="stylesheet">
@@ -24,7 +25,7 @@
 	<link rel="apple-touch-icon" href="images/general-elements/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/general-elements/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/general-elements/favicon/apple-touch-icon-114x114.png">
-
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
 	<!-- Title
 	============================================= -->
 	<title>Bharti Hexacom Limited Annual Report 2023-24</title>
@@ -32,6 +33,7 @@
 </head>
 
 <body>
+	<!-- <div style="height: 100vh;"></div> -->
 
 	<div id="scroll-progress"><span class="scroll-percent"></span></div>
 
@@ -51,7 +53,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header">
+		<!-- <header id="header">
 
 			<div id="header-wrap">
 
@@ -61,33 +63,87 @@
 
 							<a class="logo" href="#">
 								<img style="width: 220px;" src="./images/Bharti/Logo-bharti.svg" alt="">
-								<h5><span class="colored">Travel</span> Tour</h5>
-								<span>Landing Template</span>
-							</a><!-- .logo end -->
+
+							</a>
 
 							<ul id="" class="main-menu">
 								<li><a data-scroll-nav="0" href="./index.html">Home</a></li>
-								<li><a  href="./WhereWeOperate.html">Where We Operate</a></li>
+								<li><a href="./WhereWeOperate.html">Where We Operate</a></li>
 								<li><a href="./Milestone.html">Milestones</a></li>
-								<li><a  href="./chairman.html">Chairman Message</a></li>
-								<!-- <li><a data-scroll-nav="4" href="./">Board of Directors</a></li> -->
-								<!-- <li><a href="./CSR.html">CSR</a></li> -->
-								<li><a href="./images/docs/06_Bharti Hexacom FS_ 08 08 2024.pdf" target="_blank">Statutory Report</a></li>
+								<li><a href="./chairman.html">Chairman Message</a></
+								<li><a href="./images/docs/06_Bharti Hexacom FS_ 08 08 2024.pdf"
+										target="_blank">Statutory Report</a></li>
 							</ul>
-							<a class="header-btn btn small colorful hover-dark" href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank">Download Full Report</a>
+							<a class="header-btn btn small colorful hover-dark"
+								href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank">Download
+								Full Report</a>
 							<div class="mobile-menu-btn hamburger hamburger--slider">
 								<span class="hamburger-box">
 									<span class="hamburger-inner"></span>
 								</span>
-							</div><!-- .mobile-menu-btn -->
-							<div id="mobile-menu"></div><!-- #mobile-menu end -->
-						</div><!-- .col-md-12 end -->
-					</div><!-- .row end -->
-				</div><!-- .container end -->
+							</div>
+							<div id="mobile-menu"></div>
+						</div>
+					</div>
+				</div>
 
-			</div><!-- #header-wrap end -->
+			</div>
 
-		</header><!-- #header end -->
+		</header> -->
+		<header id="header">
+			<div class="navbar-main" id="navbar-main">
+				<section class="n-wrapper n-container">
+				   <a href="./index.html" class="brand"><img src="./images/Bharti/Logo-bharti.svg" alt=""></a>
+				   <div class="burger" id="burger">
+					  <span class="burger-line"></span>
+					  <span class="burger-line"></span>
+					  <span class="burger-line"></span>
+				   </div>
+				   <span class="overlay"></span>
+				   <nav class="navbar" id="navbar">
+					  <ul class="menu" id="menu">
+						 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+						 <li class="menu-item menu-dropdown">
+							<span class="menu-link" data-toggle="submenu">Corporate Overview<i class="fa fa-caret-down"></i></span>
+							<ul class="submenu">
+							   <li class="submenu-item"><a href="./WhereWeOperate.html" class="submenu-link">Where We Operate</a></li>
+							   <li class="submenu-item"><a href="./Milestone.html" class="submenu-link">Milestones</a></li>
+							   <li class="submenu-item"><a href="./chairman.html" class="submenu-link">Message from the Chairman</a></li>
+							   <li class="submenu-item"><a href="./BusinessModel.html" class="submenu-link">Business Model</a></li>
+							   <li class="submenu-item"><a href="./CSR.html" class="submenu-link">Key Performance Indicators</a></li>
+							   <li class="submenu-item"><a href="./CSR.html" class="submenu-link">Customer Experience</a></li>
+							   <li class="submenu-item"><a href="./CSR.html" class="submenu-link">Corporate Social Responsibility</a></li>
+							</ul>
+						 </li>
+						 <li class="menu-item"><a href="./images/docs/02_Bharti Hexacom MDA 08 08 2024.pdf" target="_blank" class="menu-link">MD&A</a></li>
+						 <li class="menu-item menu-dropdown">
+							<span class="menu-link" data-toggle="submenu">Statutory Reports<i class="fa fa-caret-down"></i></span>
+							<ul class="submenu">
+							   <li class="submenu-item"> <a href="./images/docs/Bharti Hexacom BRSR_08 08 2024 (From Pag 1).pdf" target="_blank" class="submenu-link">Business Responsibility & Sustainability Reporting</a></li>
+							   <li class="submenu-item"><a href="./images/docs/04_Bharti Hexacom BR_08.08.2024.pdf" target="_blank" class="submenu-link">Board’s Report</a></li>
+							   <li class="submenu-item"><a href="./images/docs/05_Bharti Hexacom CG_08.08.2024.pdf" class="submenu-link">Report on Corporate Governance</a></li>
+							</ul>
+							
+						 </li>
+
+						 <li class="menu-item"><a href="./images/docs/06_Bharti Hexacom FS_ 08 08 2024.pdf" target="_blank" class="menu-link">Financial Statements</a></li>
+						 <li class="menu-item"><a href="#" class="menu-link">Corporate Information</a></li>
+
+						 <li class="menu-item"><a data-aos="fade-up" data-aos-delay="100" class="btn btn-about menu-link-btn colorful small hover-dark " href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank"><i class="fa fa-arrow-down" aria-hidden="true"></i> Download Full Report</a></li>
+						 <!-- <li>
+	
+							 <a class="header-btn btn small colorful hover-dark" href="./images/docs/Bharti_Hexacom_Annual_Report_2023_24.pdf" target="_blank">Download Full Report</a>
+							</li> -->
+	
+					  </ul>
+				   </nav>
+				</section>
+			</div>
+
+			<div id="mobile-menu"></div><!-- #mobile-menu end -->
+			
+		</header>
+		
 
 		<!-- Slider
 		============================================= -->
@@ -95,9 +151,10 @@
 			<div class="banner-img">
 				<img src="./images/Bharti/HEXACOV.webp" alt="">
 				<div class="themeline">
-					<h1 class="th1">Customer Obsessed</h1>
-					<h1 class="th2">Performance Driven</h1>	
+					<h1 class="th1" data-aos="fade-up" data-aos-delay="100">Customer Obsessed</h1>
+					<h1 class="th2" data-aos="fade-up" data-aos-delay="300">Performance Driven</h1>    
 				</div>
+				
 			</div>
 
 		</section><!-- #banner end -->
@@ -117,18 +174,19 @@
 							<div class="row about-report m-auto align-items-center">
 								<div class="col-md-6 about-l justify-content-start">
 
-									<h2 class="text-left text-br and-red text-brand-red">About the Report</h2>
+									<h2 class="text-left text-br and-red text-brand-red " data-aos="fade-up">About the
+										Report</h2>
 
-									<p class="text-left ">
+									<p class="text-left" data-aos="fade-up" >
 										This annual report aims to provide a comprehensive overview of the performance,
 										strategy, governance, and value creation of Bharti Hexacom Limited (“the
 										Company” or “Bharti Hexacom”) for the financial year ended March 31, 2024. The
 										report is intended to provide detailed information to all stakeholders.
 									</p>
-									<a class="btn btn-about colorful small hover-dark " href="#">Read More</a>
+									<!-- <a data-aos="fade-up" data-aos-delay="100" class="btn btn-about colorful small hover-dark " href="#">Read More</a> -->
 								</div><!-- .col-md-8 end -->
 								<div class="col-md-4 about-r">
-									<img src="./images/homepage/REDGIRL.webp" alt="">
+									<img data-aos="zoom-in" data-aos-delay="100" src="./images/homepage/REDGIRL.webp" alt="">
 								</div><!-- .col-md-8 end -->
 							</div><!-- .row end -->
 						</div><!-- .container end -->
@@ -143,19 +201,19 @@
 								<div class="row">
 									<div class="justify-content-center">
 
-										<h2 class="h2-c text-brand-red">About Bharti Hexacom</h2>
-										<p class="t-p">
+										<h2 class="h2-c text-brand-red" data-aos="fade-up" >About Bharti Hexacom</h2>
+										<p class="t-p" data-aos="fade-up" data-aos-delay="100">
 											Performing with Zeal,
 											Winning Customers for Life
 										</p>
-										<p>
+										<p data-aos="fade-up" data-aos-delay="200">
 											Bharti Hexacom has been transforming lives and delivering an enriching
 											experience to millions of customers everyday <br> by providing seamless
 											connectivity and offering best-suited solutions.
 										</p>
 
 										<div class="f-card-container">
-											<div class="f-card">
+											<div class="f-card" data-aos="fade-up" data-aos-delay="100">
 												<div class="f-card-inner">
 													<div class="f-card-front">
 														<div class="f-card-icon">
@@ -173,7 +231,7 @@
 												</div>
 											</div>
 
-											<div class="f-card">
+											<div class="f-card" data-aos="fade-up" data-aos-delay="300">
 												<div class="f-card-inner">
 													<div class="f-card-front">
 														<div class="f-card-icon">
@@ -191,7 +249,7 @@
 												</div>
 											</div>
 
-											<div class="f-card">
+											<div class="f-card" data-aos="fade-up" data-aos-delay="500">
 												<div class="f-card-inner">
 													<div class="f-card-front">
 														<div class="f-card-icon">
@@ -224,9 +282,9 @@
 							<div class="col-md-12">
 
 								<ul class="os-tabs ">
-									<li class="active"><i class="fa fa-circle"></i>Performance</li>
-									<li><i class="fa fa-circle"></i>KPIs</li>
-									<li><i class="fa fa-circle"></i>Network</li>
+									<li data-aos="zoom-in" data-aos-delay="100" class="active"><i class="fa fa-circle"></i>Performance</li>
+									<li data-aos="zoom-in" data-aos-delay="200"><i class="fa fa-circle"></i>KPIs</li>
+									<li data-aos="zoom-in" data-aos-delay="300"><i class="fa fa-circle"></i>Network</li>
 									<!-- <li><i class="fa fa-heartbeat"></i>Medical Tours</li> -->
 								</ul><!-- .os-tabs end -->
 
@@ -234,7 +292,7 @@
 
 									<ul class="os-tabs-content">
 										<li class="active">
-											<div class="filters-box">
+											<div class="filters-box" >
 												<img src="./images/homepage/e1.png" alt="">
 											</div><!-- .col-md-5 end -->
 										</li>
@@ -255,16 +313,10 @@
 							</div><!-- .col-md-12 end -->
 						</div><!-- .row end -->
 					</div><!-- .container end -->
-
-
 					<div class="section-content">
-
 						<div class="container">
-
 						</div><!-- .container end -->
-
 					</div><!-- .section-content end -->
-
 				</div><!-- .flat-section end -->
 
 				<!-- === CTA Title 1 =========== -->
@@ -276,8 +328,8 @@
 					<div class="section-inner section-inner-md">
 
 						<div class="container md-container">
-							<a class="md-link" href="#">
-								<img src="./images/Bharti/MDMessage.webp" alt="">
+							<a class="md-link" href="./chairman.html">
+								<img data-aos="fade-up" data-aos-delay="100" src="./images/Bharti/MDMessage.webp" alt="">
 							</a>
 						</div><!-- .container end -->
 
@@ -297,8 +349,8 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 
-									<h2 class="h2-c text-brand-red">Board of Directors</h2>
-									<p class="t-p">
+									<h2 class="h2-c text-brand-red" data-aos="fade-up" >Board of Directors</h2>
+									<p class="t-p" data-aos="fade-up" data-aos-delay="100">
 										Ensuring Robust Governance
 									</p>
 
@@ -315,11 +367,12 @@
 								<div class="col-md-12">
 
 									<div class="tour-guide-slider">
+										
 										<ul class="owl-carousel">
-											<li>
+											<li >
 												<div class="slide">
 													<div class="box-preview">
-														<div class="box-img">
+														<div class="box-img" data-aos="fade-up" data-aos-delay="100">
 															<a href="#">
 																<img src="./images/homepage/MD1.webp" alt="">
 															</a>
@@ -330,7 +383,7 @@
 											<li>
 												<div class="slide">
 													<div class="box-preview">
-														<div class="box-img">
+														<div class="box-img" data-aos="fade-up" data-aos-delay="200">
 															<a href="#">
 																<img src="./images/homepage/MD2.webp" alt="">
 															</a>
@@ -341,7 +394,7 @@
 											<li>
 												<div class="slide">
 													<div class="box-preview">
-														<div class="box-img">
+														<div class="box-img" data-aos="fade-up" data-aos-delay="300">
 															<a href="#">
 																<img src="./images/homepage/MD3.webp" alt="">
 															</a>
@@ -436,7 +489,7 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2">
 
-									<h2 class="h2-c text-brand-red">Our Stakeholders</h2>
+									<h2 class="h2-c text-brand-red" data-aos="fade-up" data-aos-delay="100">Our Stakeholders</h2>
 									<p>
 
 									</p>
@@ -455,104 +508,104 @@
 
 								<article class="wrapper">
 									<div class="marquee marquee--reverse">
+										
 										<div class="marquee__group">
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/1.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/1.svg" alt="">
 												<div>
 													<p class="t-p">Customers</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/2.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/2.svg" alt="">
 												<div>
 													<p class="t-p">Channel partners</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/3.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/3.svg" alt="">
+												<div>
+													<p class="t-p">Investors</p>
+												</div>
+											</div>
+											<div class="marquee__item">
+												<img id="i1" src="./images/Bharti/Icons/4.svg" alt="">
 												<div>
 													<p class="t-p">Suppliers</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/4.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/5.svg" alt="">
 												<div>
 													<p class="t-p">Employees</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/5.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/6.svg" alt="">
 												<div>
 													<p class="t-p">Network partners</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/6.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/7.svg" alt="">
 												<div>
 													<p class="t-p">Regulatory bodies</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/7.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/8.svg" alt="">
 												<div>
 													<p class="t-p">Community</p>
-												</div>
-											</div>
-											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/8.svg" alt="">
-												<div>
-													<p class="t-p">Customers</p>
 												</div>
 											</div>
 										</div>
-
 										<div class="marquee__group">
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/1.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/1.svg" alt="">
 												<div>
 													<p class="t-p">Customers</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/2.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/2.svg" alt="">
 												<div>
 													<p class="t-p">Channel partners</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/3.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/3.svg" alt="">
+												<div>
+													<p class="t-p">Investors</p>
+												</div>
+											</div>
+											<div class="marquee__item">
+												<img id="i1" src="./images/Bharti/Icons/4.svg" alt="">
 												<div>
 													<p class="t-p">Suppliers</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/4.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/5.svg" alt="">
 												<div>
 													<p class="t-p">Employees</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/5.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/6.svg" alt="">
 												<div>
 													<p class="t-p">Network partners</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/6.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/7.svg" alt="">
 												<div>
 													<p class="t-p">Regulatory bodies</p>
 												</div>
 											</div>
 											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/7.svg" alt="">
+												<img id="i1" src="./images/Bharti/Icons/8.svg" alt="">
 												<div>
 													<p class="t-p">Community</p>
-												</div>
-											</div>
-											<div class="marquee__item">
-												<img  id="i1" src="./images/Bharti/Icons/8.svg" alt="">
-												<div>
-													<p class="t-p">Customers</p>
 												</div>
 											</div>
 										</div>
@@ -573,8 +626,9 @@
 				<div class="row">
 					<div class="col-md-12 footer-row">
 						<a class="logo-footer" href="#"><img src="./images/Bharti/Logo-bharti.svg" alt=""></a>
-						<div class="copyrights-message">2023 - 2024 © <span>Bharti Hexacom Limited</span>. All rights reserved.</div>
-						<a href="https://www.kalolwala.com" class="kna-logo"><img src="./images/homepage/logo-k&a.png" alt=""></a>
+						<div class="copyrights-message">2023 - 2024 © <span>Bharti Hexacom Limited</span>. All rights
+							reserved.</div>
+						<a href="https://www.kalolwala.com" class="kna-logo">Developeed by :<img src="./images/homepage/logo-k&a.png"alt=""></a>
 					</div><!-- .col-md-12 end -->
 				</div><!-- .row end -->
 			</div><!-- .container end -->
@@ -587,6 +641,18 @@
 
 	<!-- External JavaScripts
 	============================================= -->
+	<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+	<script>
+		AOS.init({
+			offset: 100,  // Offset from the original trigger point
+			duration: 900,  // Animation duration in ms
+			easing: 'ease',  // Easing function for the animation
+			once: false,  // Allow the animation to occur multiple times (on both scrolls)
+			mirror: true,  // Enable animations on scroll up as well as scroll down
+			anchorPlacement: 'top-bottom',  // Animation triggers when the top of the element reaches the bottom of the viewport
+		});
+	</script>
+	<script src="js/script.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jRespond.min.js"></script>
 	<script src="js/jquery.easing.min.js"></script>
