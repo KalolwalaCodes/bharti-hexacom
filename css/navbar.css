@@ -50,7 +50,7 @@ a, button {
    box-shadow: none;
 }
 .menu-link-btn {
-   /* margin-top: 5%; */
+   margin-top: 5%;
   margin-left: 12px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -75,7 +75,7 @@ img, video {
 }
 .n-container {
 
-   max-width: 80%;
+   max-width: 90%;
    display: flex;
    align-items: center;
    height: auto;
@@ -104,7 +104,7 @@ img, video {
 @media screen and (max-width: 992px) {
    .menu-link-btn {
       margin-top: 5%;
-     margin-left: 12px;
+     /* margin-left: 12px; */
      font-size: 1.3rem;
      font-weight: 500;
    }
