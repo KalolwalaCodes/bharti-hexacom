@@ -50,7 +50,6 @@ a, button {
    box-shadow: none;
 }
 .menu-link-btn {
-   margin-top: 5%;
   margin-left: 12px;
   font-size: 1.3rem;
   font-weight: 500;
@@ -74,7 +73,6 @@ img, video {
    background-color: var(--color-white-100);
 }
 .n-container {
-
    max-width: 90%;
    display: flex;
    align-items: center;
@@ -238,8 +236,8 @@ img, video {
    display: none;
    cursor: pointer;
    user-select: none;
-   width: 1.6rem;
-   height: 1.15rem;
+   width: 25px;
+   height: 25px;
    opacity: 0;
    visibility: hidden;
    background: transparent;
@@ -249,7 +247,7 @@ img, video {
    display: block;
    right: 0;
    width: 100%;
-   height: 2.1px;
+   height: 3px;
    opacity: 1;
    border: none;
    outline: none;
@@ -260,11 +258,11 @@ img, video {
    top: 0px;
 }
 .burger-line:nth-child(2) {
-   top: 0.5rem;
+   top: 0.8rem;
    width: 70%;
 }
 .burger-line:nth-child(3) {
-   top: 1rem;
+   top: 1.6rem;
 }
 @media only screen and (max-width: 992px) {
    .burger {

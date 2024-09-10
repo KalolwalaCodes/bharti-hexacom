@@ -9,7 +9,7 @@
 			   <span class="overlay"></span>
 			   <nav class="navbar" id="navbar">
 				  <ul class="menu" id="menu">
-					 <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+					 						 <li class="menu-item"><a href="./index.html" class="menu-link">Home</a></li>
 					 <li class="menu-item menu-dropdown">
 						<span class="menu-link" data-toggle="submenu">Corporate Overview<i class="fa fa-caret-down"></i></span>
 						<ul class="submenu">

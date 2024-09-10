@@ -3,7 +3,12 @@
 .text-brand-red {
     color: #f9704f;
 }
-
+.centerer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}   
 .t-p {
     font-size: 2em !important;
 }

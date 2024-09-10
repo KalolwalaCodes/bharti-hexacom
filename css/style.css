@@ -539,6 +539,9 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
+.bp {
+  font-weight: bold;
+}
 
 @media (min-width: 768px) {
   .lead {
@@ -13066,7 +13069,7 @@ width: 200px;
 }
 
 .copyrights-message {
-  color: #fff;
+  color: black;
   position: relative;
   top: 6px;
   font-weight: 600;
@@ -13079,13 +13082,15 @@ width: 200px;
 .kna-logo{
   width: 200px;
   display: flex;
+  font-weight: 600;
+
   align-items: center;
-  color: #fff;
+  color: black;
   /* width: 100px; */
 }
 .kna-logo img{
   padding: 8%;
-  width: 100px;
+  width: 70px;
 }
 
 .scroll-top-btn {
